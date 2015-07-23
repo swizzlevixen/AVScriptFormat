@@ -46,18 +46,16 @@ More directions on their site:
 
 The CSS is designed so that an unordered list is shown as video notes on the left, and paragraph items are shown as audio items, on the right. In markdown, this is as simple as:
 
------
-
-- This is Video
-- Another Video action
-
-This is the audio that goes with those two.
-
-- Here's another video action
-
-And here is the audio that goes with that video.
-
-This second paragraph still goes with that video.
+    - This is Video
+    - Another Video action
+    
+    This is the audio that goes with those two.
+    
+    - Here's another video action
+    
+    And here is the audio that goes with that video.
+    
+    This second paragraph still goes with that video.
 
 ## Support
 
