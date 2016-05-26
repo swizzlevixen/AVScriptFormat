@@ -64,6 +64,10 @@ The CSS is designed so that an unordered list is shown as video notes on the lef
     And here is the audio that goes with that video.
     
     This second paragraph still goes with that video.
+    
+The above markdown will result in this:
+
+![Example screenshot](readme-use-example.png)
 
 ## Support
 
