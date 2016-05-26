@@ -14,7 +14,7 @@ by Mark Boszko
 
 ## Background
 
-A/V Script Format is a very basic idea at its core. It's a table view -- two columns, side-by-side, with rows representing Video and Audio that are locked together. It's used a lot in documentary TV production (my background), and is well suited to making ads and promo videos for apps. This way you can make sure that the action you are doing and the voice explaining this action are linked together.
+A/V Script Format is a very basic idea at its core. It's a table view -- two columns, side-by-side, with rows representing Video and Audio that are locked together. It's used a lot in documentary TV production (my background), and is well suited to making ads and promo videos for apps. This way you can make sure that the action you are doing and the voice explaining this action are linked to each other.
 
 ## Installation
 
@@ -22,13 +22,13 @@ This should work with any app that previews Markdown with a CSS stylesheet.
 
 For best display, I recommend installing the free [Courier Prime font](http://www.quoteunquoteapps.com/courierprime/).
 
-First, download the files by clicking the green “Clone or Download” button above. “Download ZIP” is the easiest option, unless you are familiar with using Git.
+First, download the files by clicking the green **Clone or Download** button above. **Download ZIP** is the easiest option, unless you are familiar with using Git.
 
 Then, here are installation instructions for a few specific apps. If your app isn't listed, you probably want to select the CSS file in your app's preview settings.
 
 ### BBEdit
 
-You should be able to double-click the "AVScriptFormatV3.bbpackage" Package file, and it will install. Otherwise, put the CSS file in:
+You should be able to double-click the `AVScriptFormatV3.bbpackage` file, and it will install itself. Otherwise, put the CSS file in this folder:
 
 `~/Library/Application Support/BBEdit/Preview CSS`
 
@@ -36,17 +36,13 @@ You should be able to double-click the "AVScriptFormatV3.bbpackage" Package file
 
 In **Marked > Preferences > Style**, click the **+** button and select the CSS file to import it.
 
-More directions on their site:
-
-[http://marked2app.com/help/Custom_Styles.html]()
+[More detailed directions on their site](http://marked2app.com/help/Custom_Styles.html).
 
 ### Ulysses
 
 Drag the CSS file into the style preferences table or use the **Add Styles…** button.
 
-More directions on their site:
-
-[http://www.ulyssesapp.com/styles/]()
+[More directions on their site](http://www.ulyssesapp.com/styles/).
 
 ## Use
 
