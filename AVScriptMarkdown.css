@@ -321,10 +321,10 @@ table tr:nth-child(even),table td:nth-child(even)
     /* print only styles. Keep it clean */
     body
     {
-        overflow:auto
+        overflow:auto;
     }
     img, pre, blockquote, table, figure, p {
-        page-break-inside: avoid
+        page-break-inside: avoid;
     }
     .footnotes, ul { page-break-before: always }
 
@@ -386,21 +386,36 @@ table tr:nth-child(even),table td:nth-child(even)
 ul {
 	width: 45%;
 	float: left;
-	background-color: #f0f0f0;
+	background-color: #ddd;
+	-webkit-print-color-adjust: exact; /* This will print the background shading */
 	clear: both;
 	padding: 1em;
-	list-style-type: none;
+	list-style-type: none;  /* So that we can insert custom-colored ones, below */
 	font-family: "Courier Prime", Courier, "Courier New", mono;
+	page-break-inside: avoid;
+}
+
+li:before {
+    content: "• "; /* Insert content that looks like bullets */
+    color: #1487b1; /* Or a color you prefer */
 }
 
 p {
+    font-family: "Courier Prime", Courier, "Courier New", mono;
+    font-style: italic;
+}
+
+ul + p {
 	width: 45%;
 	float: right;
 	margin-bottom: 0;
 	margin-top: 1em;
 	font-family: "Courier Prime", Courier, "Courier New", mono;
+	font-style: normal;
 	padding: .7em 1em 1em;
 	border-top: 1px solid #ccc;
+	-webkit-print-color-adjust: exact; /* This will print the border color */
+	page-break-inside: avoid;
 }
 
 ul li + li {
@@ -411,10 +426,27 @@ ul + ul {
 	clear: left;
 }
 
-p + p {
+ul + p + p, ul + p + p + p, ul + p + p + p + p, ul + p + p + p + p + p {
 	clear: right;
 	border-top: none;
 	margin-top: 0;
+	
+	width: 45%;
+	float: right;
+	margin-bottom: 0;
+	font-family: "Courier Prime", Courier, "Courier New", mono;
+	font-style: normal;
+	padding: .7em 1em 1em;
+	page-break-inside: avoid;
+}
+
+h1, h2, h3, h4, h5, h6, pre, blockquote {
+    clear: both;
+}
+
+pre {
+    font-family: "Courier Prime", Courier, "Courier New", mono;
+	-webkit-print-color-adjust: exact; /* Supposedly this will print the background shading */
 }
 
 /* @end */
