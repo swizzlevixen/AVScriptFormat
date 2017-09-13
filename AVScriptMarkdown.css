@@ -337,6 +337,10 @@ table tr:nth-child(even),table td:nth-child(even)
         position:relative;
         text-indent:0
     }
+    
+    hr {
+        page-break-after: always;
+    }
 }
 
 @media screen {
@@ -440,7 +444,7 @@ ul + p + p, ul + p + p + p, ul + p + p + p + p, ul + p + p + p + p + p {
 	page-break-inside: avoid;
 }
 
-h1, h2, h3, h4, h5, h6, pre, blockquote {
+h1, h2, h3, h4, h5, h6, pre, blockquote, hr {
     clear: both;
 }
 
